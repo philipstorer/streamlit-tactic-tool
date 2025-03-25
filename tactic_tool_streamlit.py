@@ -22,7 +22,7 @@ def generate_description(tactic):
     }
 
 # UI
-st.title("Strategic Tactic Generator")
+st.title("AI-Driven Brand Planning by Common Pharma Strategic Imperatives")
 st.markdown("Select your strategic challenges and tactic categories to generate a custom execution plan.")
 
 selected_challenges = st.multiselect("Select Strategic Challenges", strategic_challenges)
