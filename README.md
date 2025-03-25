@@ -1,6 +1,6 @@
 # 📊 Strategic Tactic Generator (Streamlit App)
 
-A web-based tool that helps pharma marketers select strategic challenges and tactic categories, then generates a list of recommended tactics with AI-generated descriptions, suggested timelines, and budget estimates.
+A web-based tool that helps pharma marketers select strategic challenges and tactic categories, then generates a list of recommended tactics with GPT-generated descriptions, suggested timelines, and budget estimates.
 
 ## 🚀 How to Use This App
 
@@ -9,22 +9,29 @@ A web-based tool that helps pharma marketers select strategic challenges and tac
 3. Choose one or more **Tactic Categories**
 4. Click **Generate Plan** to see your custom tactical recommendations
 
-## 🧠 How It Works
-- Loads tactic data from an Excel matrix
-- Filters tactics based on your selections
-- Uses AI-style templates to provide descriptions, estimated timelines, and typical budget ranges
+## 🔐 Setting up your OpenAI API key
+
+In the `.streamlit/secrets.toml` file, add your API key like this:
+
+```
+OPENAI_API_KEY = "your-openai-api-key-here"
+```
 
 ## 📁 Project Structure
 ```
-├── tactic_tool_streamlit.py          # Main app script
-├── Strategic_Imperatives_Tactic_Matrix.xlsx  # Excel data source
-├── requirements.txt                 # Python dependencies
+├── tactic_tool_streamlit.py
+├── Strategic_Imperatives_Tactic_Matrix.xlsx
+├── requirements.txt
+├── README.md
+└── .streamlit/
+    └── secrets.toml (user-created)
 ```
 
 ## 🧰 Requirements
 - Python 3.8+
 - Streamlit
 - Pandas
+- OpenAI
 - openpyxl
 
 ## 💻 Run Locally
