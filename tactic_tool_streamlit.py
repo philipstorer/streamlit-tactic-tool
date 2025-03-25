@@ -26,7 +26,7 @@ st.title("AI-Driven Brand Planning by Common Pharma Strategic Imperatives")
 st.markdown("Select your strategic challenges and tactic categories to generate a custom execution plan.")
 
 selected_challenges = st.multiselect("Select Strategic Challenges", strategic_challenges)
-selected_categories = st.multiselect("Select Tactic Categories", tactic_categories)
+selected_categories = st.multiselect("Select Tactical Objectives", tactic_categories)
 
 if st.button("Generate Plan"):
     if not selected_challenges or not selected_categories:
